@@ -1,0 +1,1603 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>English Conversation Practice - Part 4 (Units 101-134)</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-primary: #f8fafc;
+      --bg-card: #ffffff;
+      --text-main: #0f172a;
+      --text-muted: #64748b;
+      --accent: #2563eb;
+      --accent-hover: #1d4ed8;
+      --accent-light: #eff6ff;
+      --border: #e2e8f0;
+      --s1-color: #0284c7;
+      --s2-color: #059669;
+      --tag-bg: #f1f5f9;
+      --badge-bn: #d97706;
+    }
+
+    [data-theme="dark"] {
+      --bg-primary: #090d16;
+      --bg-card: #131b2e;
+      --text-main: #f1f5f9;
+      --text-muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent-hover: #60a5fa;
+      --accent-light: #1e293b;
+      --border: #1e293b;
+      --s1-color: #38bdf8;
+      --s2-color: #34d399;
+      --tag-bg: #1e293b;
+      --badge-bn: #fbbf24;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', 'Hind Siliguri', sans-serif;
+      background-color: var(--bg-primary);
+      color: var(--text-main);
+      line-height: 1.6;
+      transition: background-color 0.3s, color 0.3s;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--bg-card);
+      border-bottom: 1px solid var(--border);
+      padding: 1rem 1.5rem;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    }
+
+    .header-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+
+    @media (min-width: 768px) {
+      .header-container {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+    }
+
+    .title-area h1 {
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .title-area p {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .controls {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+      flex-wrap: wrap;
+    }
+
+    .search-box {
+      flex: 1;
+      min-width: 220px;
+      position: relative;
+    }
+
+    .search-box input {
+      width: 100%;
+      padding: 0.55rem 1rem 0.55rem 2.2rem;
+      border: 1px solid var(--border);
+      border-radius: 9999px;
+      background: var(--bg-primary);
+      color: var(--text-main);
+      font-size: 0.9rem;
+      outline: none;
+      transition: border-color 0.2s;
+    }
+
+    .search-box input:focus {
+      border-color: var(--accent);
+    }
+
+    .search-icon {
+      position: absolute;
+      left: 0.8rem;
+      top: 50%;
+      transform: translateY(-50%);
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+
+    .btn {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      padding: 0.5rem 0.9rem;
+      border-radius: 8px;
+      border: 1px solid var(--border);
+      background: var(--bg-card);
+      color: var(--text-main);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+
+    .btn:hover {
+      background: var(--accent-light);
+      border-color: var(--accent);
+      color: var(--accent);
+    }
+
+    .main-layout {
+      max-width: 1200px;
+      margin: 1.5rem auto;
+      padding: 0 1rem;
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 1.5rem;
+    }
+
+    @media (min-width: 1024px) {
+      .main-layout {
+        grid-template-columns: 280px 1fr;
+      }
+    }
+
+    .sidebar {
+      position: sticky;
+      top: 5.5rem;
+      max-height: calc(100vh - 7rem);
+      overflow-y: auto;
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1rem;
+    }
+
+    .sidebar h2 {
+      font-size: 0.95rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      padding-bottom: 0.4rem;
+      border-bottom: 1px solid var(--border);
+    }
+
+    .nav-list {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .nav-link {
+      display: block;
+      padding: 0.45rem 0.7rem;
+      border-radius: 6px;
+      color: var(--text-main);
+      text-decoration: none;
+      font-size: 0.85rem;
+      font-weight: 500;
+      transition: background 0.2s, color 0.2s;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .nav-link:hover, .nav-link.active {
+      background: var(--accent-light);
+      color: var(--accent);
+      font-weight: 600;
+    }
+
+    .content-area {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+
+    .unit-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+      scroll-margin-top: 5.5rem;
+    }
+
+    .unit-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 0.75rem;
+      margin-bottom: 1.25rem;
+    }
+
+    .unit-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: var(--accent);
+    }
+
+    .unit-badge {
+      background: var(--accent-light);
+      color: var(--accent);
+      padding: 0.2rem 0.6rem;
+      border-radius: 9999px;
+      font-size: 0.75rem;
+      font-weight: 600;
+    }
+
+    .section-subtitle {
+      font-size: 0.95rem;
+      font-weight: 600;
+      margin: 1.2rem 0 0.8rem;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .section-subtitle::before {
+      content: "";
+      display: inline-block;
+      width: 4px;
+      height: 16px;
+      background: var(--accent);
+      border-radius: 2px;
+    }
+
+    .dialogue-box {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-bottom: 1rem;
+    }
+
+    .dialogue-box-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: var(--text-muted);
+      margin-bottom: 0.75rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .convo-row {
+      display: grid;
+      grid-template-columns: 45px 1fr;
+      gap: 0.75rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px dashed var(--border);
+      align-items: baseline;
+    }
+
+    .convo-row:last-child {
+      border-bottom: none;
+    }
+
+    .speaker-tag {
+      font-weight: 700;
+      font-size: 0.85rem;
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+      text-align: center;
+    }
+
+    .speaker-s1 {
+      background: rgba(2, 132, 199, 0.12);
+      color: var(--s1-color);
+    }
+
+    .speaker-s2 {
+      background: rgba(5, 150, 105, 0.12);
+      color: var(--s2-color);
+    }
+
+    .speaker-s3, .speaker-s4 {
+      background: rgba(217, 119, 6, 0.12);
+      color: var(--badge-bn);
+    }
+
+    .sentence-pair {
+      display: flex;
+      flex-direction: column;
+      gap: 0.2rem;
+    }
+
+    .en-text {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--text-main);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .speak-btn {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      cursor: pointer;
+      font-size: 0.85rem;
+      padding: 2px 5px;
+      border-radius: 4px;
+      transition: color 0.2s;
+    }
+
+    .speak-btn:hover {
+      color: var(--accent);
+    }
+
+    .bn-text {
+      font-size: 0.9rem;
+      color: var(--text-muted);
+      font-weight: 400;
+    }
+
+    .exercise-box {
+      background: var(--bg-primary);
+      border: 1px solid var(--border);
+      border-radius: 10px;
+      padding: 1rem;
+      margin-top: 1rem;
+    }
+
+    .drill-item {
+      padding: 0.5rem 0;
+      border-bottom: 1px solid var(--border);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+
+    @media (min-width: 640px) {
+      .drill-item {
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+      }
+    }
+
+    .drill-item:last-child {
+      border-bottom: none;
+    }
+
+    .drill-en {
+      font-weight: 500;
+      font-size: 0.9rem;
+    }
+
+    .drill-bn {
+      color: var(--text-muted);
+      font-size: 0.85rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 2rem 1rem;
+      color: var(--text-muted);
+      font-size: 0.85rem;
+      border-top: 1px solid var(--border);
+      margin-top: 3rem;
+      background: var(--bg-card);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="header-container">
+      <div class="title-area">
+        <h1>📖 English Conversation Practice - Part 4 (লেসন ১০১ থেকে ১৩৪)</h1>
+        <p>ইংরেজি কথোপকথন ও বাংলা অর্থ সহ সম্পূর্ণ গাইডলাইন</p>
+      </div>
+      <div class="controls">
+        <div class="search-box">
+          <span class="search-icon">🔍</span>
+          <input type="text" id="searchInput" placeholder="খুঁজুন (যেমন: tag question, passive, preposition, infinitive)..." onkeyup="filterContent()">
+        </div>
+        <button class="btn" onclick="toggleTheme()" id="themeBtn">🌙 Dark Mode</button>
+        <button class="btn" onclick="toggleAllBengali()" id="toggleBnBtn">👁️ বাংলা হাইড/শো</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="main-layout">
+    <aside class="sidebar">
+      <h2>লেসন তালিকা (১০১-১৩৪)</h2>
+      <ul class="nav-list" id="navList"></ul>
+    </aside>
+
+    <main class="content-area" id="contentArea">
+      
+    <section class="unit-card" id="unit-101">
+      <div class="unit-header">
+        <h2 class="unit-title">101. TAG QUESTIONS (ট্যাগ কোশ্চেন ও সম্মতি সূচক প্রশ্ন)</h2>
+        <span class="unit-badge">Unit 101</span>
+      </div>
+      <div class="section-subtitle">কথোপকথন (Conversations)</div>
+      
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation A</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>That isn&#x27;t your jacket, is it?</span>
+                  <button class="speak-btn" onclick="speakText('That isn\'t your jacket, is it?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">ওটা তো তোমার জ্যাকেট নয়, তাই না?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>No, it isn&#x27;t, but it looks like mine.</span>
+                  <button class="speak-btn" onclick="speakText('No, it isn\'t, but it looks like mine.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">না, আমার নয়, তবে দেখতে আমারটার মতোই।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>But these are your gloves, aren&#x27;t they?</span>
+                  <button class="speak-btn" onclick="speakText('But these are your gloves, aren\'t they?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কিন্তু এই হাতমোজাগুলো তোমার, তাই তো?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Yes, they are.</span>
+                  <button class="speak-btn" onclick="speakText('Yes, they are.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">হ্যাঁ, এগুলো আমার।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation B</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>There were a lot of people at the reception, weren’t there?</span>
+                  <button class="speak-btn" onclick="speakText('There were a lot of people at the reception, weren’t there?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">অনুষ্ঠানে প্রচুর মানুষ উপস্থিত ছিল, তাই না?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Yes, there were. Over 100, I’d guess.</span>
+                  <button class="speak-btn" onclick="speakText('Yes, there were. Over 100, I’d guess.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">হ্যাঁ, ছিল। আমার অনুমান ১০০ জনের বেশি।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>There wasn&#x27;t enough food for everyone, was there?</span>
+                  <button class="speak-btn" onclick="speakText('There wasn\'t enough food for everyone, was there?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">সবার জন্য পর্যাপ্ত খাবার ছিল না, তাই তো?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>No, there wasn’t. Everyone complained.</span>
+                  <button class="speak-btn" onclick="speakText('No, there wasn’t. Everyone complained.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">না, ছিল না। সবাই অভিযোগ করছিল।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation C</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>It rains a lot in this part of the country, doesn&#x27;t it?</span>
+                  <button class="speak-btn" onclick="speakText('It rains a lot in this part of the country, doesn\'t it?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">দেশের এই অঞ্চলে প্রচুর বৃষ্টি হয়, তাই না?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Yes, it does, but only in the spring.</span>
+                  <button class="speak-btn" onclick="speakText('Yes, it does, but only in the spring.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">হ্যাঁ হয়, তবে কেবল বসন্তকালে।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>But it doesn&#x27;t ever snow around here, does it?</span>
+                  <button class="speak-btn" onclick="speakText('But it doesn\'t ever snow around here, does it?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কিন্তু এখানে তো কখনও তুষারপাত হয় না, তাই না?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>No, it never does.</span>
+                  <button class="speak-btn" onclick="speakText('No, it never does.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">না, কখনও হয় না।</div>
+              </div>
+            </div>
+        </div>
+      
+        <div class="section-subtitle">অনুশীলনী ও বাক্য রূপান্তর (Practice & Drills)</div>
+        <div class="exercise-box">
+          
+            <div class="drill-item">
+              <div class="drill-en">They work hard, don&#x27;t they? - Yes, they do.</div>
+              <div class="drill-bn">তারা কঠোর পরিশ্রম করে, তাই না? - হ্যাঁ, করে।</div>
+            </div>
+            <div class="drill-item">
+              <div class="drill-en">She doesn&#x27;t write letters, does she? - No, she doesn&#x27;t.</div>
+              <div class="drill-bn">সে চিঠি লেখে না, তাই কি? - না, সে লেখে না।</div>
+            </div>
+        </div>
+    </section>
+    <section class="unit-card" id="unit-103">
+      <div class="unit-header">
+        <h2 class="unit-title">103. SHORT ADDITIONS (সংক্ষিপ্ত সম্মতি ও সংযোজন)</h2>
+        <span class="unit-badge">Unit 103</span>
+      </div>
+      <div class="section-subtitle">কথোপকথন (Conversations)</div>
+      
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation A</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>My friend can speak French.</span>
+                  <button class="speak-btn" onclick="speakText('My friend can speak French.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমার বন্ধু ফরাসি বলতে পারে।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Alice can too.</span>
+                  <button class="speak-btn" onclick="speakText('Alice can too.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">অ্যালিসও পারে।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>But my friend can&#x27;t speak German.</span>
+                  <button class="speak-btn" onclick="speakText('But my friend can\'t speak German.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কিন্তু আমার বন্ধু জার্মান বলতে পারে না।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Alice can&#x27;t either.</span>
+                  <button class="speak-btn" onclick="speakText('Alice can\'t either.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">অ্যালিসও পারে না।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation B</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>We went to the concert last night.</span>
+                  <button class="speak-btn" onclick="speakText('We went to the concert last night.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমরা গত রাতে কনসার্টে গিয়েছিলাম।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>We did too.</span>
+                  <button class="speak-btn" onclick="speakText('We did too.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমরাও গিয়েছিলাম।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>But we didn&#x27;t get there on time.</span>
+                  <button class="speak-btn" onclick="speakText('But we didn\'t get there on time.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কিন্তু আমরা সেখানে সময়মতো পৌঁছাতে পারিনি।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>We didn&#x27;t either.</span>
+                  <button class="speak-btn" onclick="speakText('We didn\'t either.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমরাও পারিনি।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation C</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I met that government official from Japan.</span>
+                  <button class="speak-btn" onclick="speakText('I met that government official from Japan.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">জাপানের সেই সরকারি কর্মকর্তার সাথে আমার দেখা হয়েছিল।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>So did I.</span>
+                  <button class="speak-btn" onclick="speakText('So did I.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমারও হয়েছিল।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>But I didn&#x27;t meet his wife.</span>
+                  <button class="speak-btn" onclick="speakText('But I didn\'t meet his wife.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কিন্তু ওনার স্ত্রীর সাথে আমার দেখা হয়নি।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Neither did I.</span>
+                  <button class="speak-btn" onclick="speakText('Neither did I.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমারও হয়নি।</div>
+              </div>
+            </div>
+        </div>
+      
+        <div class="section-subtitle">অনুশীলনী ও বাক্য রূপান্তর (Practice & Drills)</div>
+        <div class="exercise-box">
+          
+            <div class="drill-item">
+              <div class="drill-en">He learned all the words. - We did too / So did we.</div>
+              <div class="drill-bn">সে সবগুলো শব্দ শিখেছে। - আমরাও শিখেছি।</div>
+            </div>
+            <div class="drill-item">
+              <div class="drill-en">I&#x27;m not ready to leave yet. - Neither is he / He isn&#x27;t either.</div>
+              <div class="drill-bn">আমি এখনও বের হওয়ার জন্য প্রস্তুত নই। - সেও প্রস্তুত নয়।</div>
+            </div>
+        </div>
+    </section>
+    <section class="unit-card" id="unit-109">
+      <div class="unit-header">
+        <h2 class="unit-title">109. ACTIVE VS. PASSIVE VERBS (বাচ্য পরিবর্তন ও কর্মবাচ্য)</h2>
+        <span class="unit-badge">Unit 109</span>
+      </div>
+      <div class="section-subtitle">কথোপকথন (Conversations)</div>
+      
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation A</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>By whom is the telephone answered?</span>
+                  <button class="speak-btn" onclick="speakText('By whom is the telephone answered?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কার দ্বারা টেলিফোন রিসিভ করা হয়?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>The secretary usually answers it.</span>
+                  <button class="speak-btn" onclick="speakText('The secretary usually answers it.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">সেক্রেটারি সাধারণত এটি রিসিভ করেন।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Who opens the mail every day?</span>
+                  <button class="speak-btn" onclick="speakText('Who opens the mail every day?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">প্রতিদিন চিঠিপত্র কে খোলে?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>It&#x27;s opened by the office manager.</span>
+                  <button class="speak-btn" onclick="speakText('It\'s opened by the office manager.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">এটি অফিস ম্যানেজারের দ্বারা খোলা হয়।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation B</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Was the letter written yesterday?</span>
+                  <button class="speak-btn" onclick="speakText('Was the letter written yesterday?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">চিঠিটি কি গতকাল লেখা হয়েছিল?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I’m sorry, I didn&#x27;t hear you.</span>
+                  <button class="speak-btn" onclick="speakText('I’m sorry, I didn\'t hear you.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">দুঃখিত, শুনতে পাইনি।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Did anyone write the letter yesterday?</span>
+                  <button class="speak-btn" onclick="speakText('Did anyone write the letter yesterday?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">গতকাল কি কেউ চিঠিটি লিখেছিল?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I&#x27;m afraid not.</span>
+                  <button class="speak-btn" onclick="speakText('I\'m afraid not.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">মনে হয় কেউ লেখেনি।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation C</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Will the repair work be done on time?</span>
+                  <button class="speak-btn" onclick="speakText('Will the repair work be done on time?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">মেরামতের কাজটি কি সময়মতো সম্পন্ন হবে?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Yes. The men will do it tomorrow.</span>
+                  <button class="speak-btn" onclick="speakText('Yes. The men will do it tomorrow.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">হ্যাঁ। কর্মীরা কালই এটি সম্পন্ন করবে।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Has the work been started yet?</span>
+                  <button class="speak-btn" onclick="speakText('Has the work been started yet?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কাজ কি ইতোমধ্যে শুরু হয়েছে?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>The men started it just this morning.</span>
+                  <button class="speak-btn" onclick="speakText('The men started it just this morning.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কর্মীরা আজ সকালেই এটি শুরু করেছে।</div>
+              </div>
+            </div>
+        </div>
+      
+        <div class="section-subtitle">অনুশীলনী ও বাক্য রূপান্তর (Practice & Drills)</div>
+        <div class="exercise-box">
+          
+            <div class="drill-item">
+              <div class="drill-en">The problem has been solved. - Someone has solved it.</div>
+              <div class="drill-bn">সমস্যাটির সমাধান করা হয়েছে। - কেউ একজন এটির সমাধান করেছে।</div>
+            </div>
+            <div class="drill-item">
+              <div class="drill-en">The mirror was broken. - Someone broke the mirror.</div>
+              <div class="drill-bn">আয়নাটি ভেঙে ফেলা হয়েছিল। - কেউ একজন আয়নাটি ভেঙেছে।</div>
+            </div>
+        </div>
+    </section>
+    <section class="unit-card" id="unit-114">
+      <div class="unit-header">
+        <h2 class="unit-title">114. INFINITIVE OF PURPOSE (উদ্দেশ্যমূলক ইনফিনিটিভ ব্যবহার)</h2>
+        <span class="unit-badge">Unit 114</span>
+      </div>
+      <div class="section-subtitle">কথোপকথন (Conversations)</div>
+      
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation A</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>My friend enrolled at a local school.</span>
+                  <button class="speak-btn" onclick="speakText('My friend enrolled at a local school.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমার বন্ধু একটি স্থানীয় স্কুলে ভর্তি হয়েছে।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Did he say why he enrolled there?</span>
+                  <button class="speak-btn" onclick="speakText('Did he say why he enrolled there?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">সে কি বলেছে কেন সে সেখানে ভর্তি হয়েছে?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>He enrolled there to improve his English, he said.</span>
+                  <button class="speak-btn" onclick="speakText('He enrolled there to improve his English, he said.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">সে বলল ইংরেজি উন্নত করতেই সেখানে ভর্তি হয়েছে।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I suspect he did it to satisfy his boss.</span>
+                  <button class="speak-btn" onclick="speakText('I suspect he did it to satisfy his boss.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমার ধারণা সে তার বসকে খুশি করতে এটা করেছে।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation B</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I&#x27;ve come to see Alice.</span>
+                  <button class="speak-btn" onclick="speakText('I\'ve come to see Alice.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমি এলিসের সাথে দেখা করতে এসেছি।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Sorry. She left for the library about ten minutes ago.</span>
+                  <button class="speak-btn" onclick="speakText('Sorry. She left for the library about ten minutes ago.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">দুঃখিত। সে প্রায় দশ মিনিট আগে লাইব্রেরির উদ্দেশ্যে চলে গেছে।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I wonder why she went there.</span>
+                  <button class="speak-btn" onclick="speakText('I wonder why she went there.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">ভাবছি সে কেন সেখানে গেল।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I think she went there to meet someone.</span>
+                  <button class="speak-btn" onclick="speakText('I think she went there to meet someone.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমার মনে হয় সে কারও সাথে দেখা করতে গেছে।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation C</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Could I borrow some money from you?</span>
+                  <button class="speak-btn" onclick="speakText('Could I borrow some money from you?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">তোমার কাছ থেকে কিছু টাকা ধার নিতে পারি?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>What do you need it for?</span>
+                  <button class="speak-btn" onclick="speakText('What do you need it for?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কী কারণে প্রয়োজন?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I need it to pay my telephone bill.</span>
+                  <button class="speak-btn" onclick="speakText('I need it to pay my telephone bill.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">টেলিফোন বিল পরিশোধ করার জন্য আমার প্রয়োজন।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>All right, but I&#x27;ll have to stop at the bank to get it.</span>
+                  <button class="speak-btn" onclick="speakText('All right, but I\'ll have to stop at the bank to get it.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">ঠিক আছে, তবে ব্যাংক থেকে টাকা তুলতে আমাকে একটু থামতে হবে।</div>
+              </div>
+            </div>
+        </div>
+      
+        <div class="section-subtitle">অনুশীলনী ও বাক্য রূপান্তর (Practice & Drills)</div>
+        <div class="exercise-box">
+          
+            <div class="drill-item">
+              <div class="drill-en">I enrolled in a course to improve my English skills.</div>
+              <div class="drill-bn">আমার ইংরেজি দক্ষতা উন্নত করতে আমি একটি কোর্সে ভর্তি হয়েছি।</div>
+            </div>
+            <div class="drill-item">
+              <div class="drill-en">He shut the window to keep out the outside noise.</div>
+              <div class="drill-bn">বাইরের আওয়াজ আটকাতে সে জানালাটি বন্ধ করেছিল।</div>
+            </div>
+        </div>
+    </section>
+    <section class="unit-card" id="unit-118">
+      <div class="unit-header">
+        <h2 class="unit-title">118. CONJUNCTIVE + INFINITIVE (কীভাবে/কোথায় করব এর ব্যবহার)</h2>
+        <span class="unit-badge">Unit 118</span>
+      </div>
+      <div class="section-subtitle">কথোপকথন (Conversations)</div>
+      
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation A</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Where should I park my car?</span>
+                  <button class="speak-btn" onclick="speakText('Where should I park my car?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমার গাড়িটি কোথায় পার্ক করা উচিত?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Didn&#x27;t Fred show you where to park it?</span>
+                  <button class="speak-btn" onclick="speakText('Didn\'t Fred show you where to park it?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কোথায় পার্ক করতে হবে ফ্রেড কি দেখিয়ে দেয়নি?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>He wasn&#x27;t sure what to tell me.</span>
+                  <button class="speak-btn" onclick="speakText('He wasn\'t sure what to tell me.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">সে আমাকে কী বলবে তা নিয়ে নিশ্চিত ছিল না।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Then let&#x27;s ask the guard over there where to put it.</span>
+                  <button class="speak-btn" onclick="speakText('Then let\'s ask the guard over there where to put it.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">তাহলে ঐ গার্ডকে জিজ্ঞাসা করি কোথায় গাড়িটি রাখা যায়।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation B</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Would you explain how to pronounce this word?</span>
+                  <button class="speak-btn" onclick="speakText('Would you explain how to pronounce this word?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">এই শব্দটি কীভাবে উচ্চারণ করতে হয় বুঝিয়ে বলবেন?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I thought you already knew how to pronounce it.</span>
+                  <button class="speak-btn" onclick="speakText('I thought you already knew how to pronounce it.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমি তো ভেবেছিলাম এটি কীভাবে উচ্চারণ করতে হয় তুমি জানো।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I did know, but I&#x27;ve forgotten.</span>
+                  <button class="speak-btn" onclick="speakText('I did know, but I\'ve forgotten.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">জানতাম, তবে ভুলে গেছি।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Well, I hope you remember how to pronounce it next time.</span>
+                  <button class="speak-btn" onclick="speakText('Well, I hope you remember how to pronounce it next time.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আশা করি পরের বার মনে রাখতে পারবে।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation E</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Which one of these sweaters are you going to buy?</span>
+                  <button class="speak-btn" onclick="speakText('Which one of these sweaters are you going to buy?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">এই সোয়েটারগুলোর মধ্যে কোনটি তুমি কিনতে যাচ্ছ?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I really don&#x27;t know which one to choose.</span>
+                  <button class="speak-btn" onclick="speakText('I really don\'t know which one to choose.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কোনটি বেছে নেব আমি সত্যি বুঝতে পারছি না।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>In that case, do you want me to tell you what to do?</span>
+                  <button class="speak-btn" onclick="speakText('In that case, do you want me to tell you what to do?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">তাহলে কী করা যায় আমি কি বলে দেব?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Since I can&#x27;t decide which to take, I&#x27;d appreciate your advice.</span>
+                  <button class="speak-btn" onclick="speakText('Since I can\'t decide which to take, I\'d appreciate your advice.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">যেহেতু কোনটি নেব ঠিক করতে পারছি না, তোমার পরামর্শ পেলে খুব ভালো হয়।</div>
+              </div>
+            </div>
+        </div>
+      
+        <div class="section-subtitle">অনুশীলনী ও বাক্য রূপান্তর (Practice & Drills)</div>
+        <div class="exercise-box">
+          
+            <div class="drill-item">
+              <div class="drill-en">She knows when to leave and what to say.</div>
+              <div class="drill-bn">কখন বের হতে হবে এবং কী বলতে হবে তা সে জানে।</div>
+            </div>
+            <div class="drill-item">
+              <div class="drill-en">We discovered how to solve the problem efficiently.</div>
+              <div class="drill-bn">কীভাবে সমস্যাটি দক্ষতার সাথে সমাধান করতে হয় তা আমরা বের করেছি।</div>
+            </div>
+        </div>
+    </section>
+    <section class="unit-card" id="unit-124">
+      <div class="unit-header">
+        <h2 class="unit-title">124. VERB + PREPOSITIONS (উপযুক্ত প্রিপজিশন সহ ক্রিয়াপদ)</h2>
+        <span class="unit-badge">Unit 124</span>
+      </div>
+      <div class="section-subtitle">কথোপকথন (Conversations)</div>
+      
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation A</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Were you quarreling with John about something?</span>
+                  <button class="speak-btn" onclick="speakText('Were you quarreling with John about something?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">তুমি কি কোনো বিষয় নিয়ে জনের সাথে ঝগড়া করছিলে?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>No. We were just talking about the political situation.</span>
+                  <button class="speak-btn" onclick="speakText('No. We were just talking about the political situation.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">না। আমরা কেবল রাজনৈতিক পরিস্থিতি নিয়ে আলোচনা করছিলাম।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Does John&#x27;s opinion differ greatly from yours?</span>
+                  <button class="speak-btn" onclick="speakText('Does John\'s opinion differ greatly from yours?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">জনের মতামত কি তোমার মতের চেয়ে অনেক বেশি ভিন্ন?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Not much. We agree on almost everything.</span>
+                  <button class="speak-btn" onclick="speakText('Not much. We agree on almost everything.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">খুব বেশি নয়। প্রায় সব বিষয়েই আমাদের মতের মিল আছে।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation B</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Are you worrying about something?</span>
+                  <button class="speak-btn" onclick="speakText('Are you worrying about something?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">তুমি কি কোনো বিষয়ে দুশ্চিন্তা করছ?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Yes. My job is interfering with my studies.</span>
+                  <button class="speak-btn" onclick="speakText('Yes. My job is interfering with my studies.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">হ্যাঁ। আমার চাকরিটা পড়াশোনায় ব্যাঘাত সৃষ্টি করছে।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Why do you insist on studying and working at the same time?</span>
+                  <button class="speak-btn" onclick="speakText('Why do you insist on studying and working at the same time?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">একসাথে পড়ালেখা ও চাকরি দুটোই চালিয়ে নেওয়ার ব্যাপারে তুমি এত জেদ করছ কেন?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I want to finish school, but I also need money.</span>
+                  <button class="speak-btn" onclick="speakText('I want to finish school, but I also need money.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমি পড়াশোনা শেষ করতে চাই, আবার আমার টাকারও প্রয়োজন।</div>
+              </div>
+            </div>
+        </div>
+      
+        <div class="section-subtitle">অনুশীলনী ও বাক্য রূপান্তর (Practice & Drills)</div>
+        <div class="exercise-box">
+          
+            <div class="drill-item">
+              <div class="drill-en">It depends on a number of factors.</div>
+              <div class="drill-bn">এটি বেশ কিছু বিষয়ের ওপর নির্ভর করে।</div>
+            </div>
+            <div class="drill-item">
+              <div class="drill-en">Everyone will benefit from your valuable advice.</div>
+              <div class="drill-bn">আপনার মূল্যবান পরামর্শ থেকে সবাই উপকৃত হবে।</div>
+            </div>
+        </div>
+    </section>
+    <section class="unit-card" id="unit-127">
+      <div class="unit-header">
+        <h2 class="unit-title">127. ADJECTIVES + PREPOSITION (বিশেষণ ও প্রিপজিশনের ব্যবহার)</h2>
+        <span class="unit-badge">Unit 127</span>
+      </div>
+      <div class="section-subtitle">কথোপকথন (Conversations)</div>
+      
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation A</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Smith is very popular with his employees, isn&#x27;t he?</span>
+                  <button class="speak-btn" onclick="speakText('Smith is very popular with his employees, isn\'t he?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">স্মিথ তার কর্মীদের কাছে খুবই জনপ্রিয়, তাই না?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Yes, he is. He&#x27;s always been very fair to them.</span>
+                  <button class="speak-btn" onclick="speakText('Yes, he is. He\'s always been very fair to them.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">হ্যাঁ, তিনি খুবই জনপ্রিয়। তিনি সবসময় তাদের প্রতি সুবিচার করেন।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I know he always seems to be aware of other people&#x27;s problems.</span>
+                  <button class="speak-btn" onclick="speakText('I know he always seems to be aware of other people\'s problems.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমি জানি তিনি সবসময় অন্যদের সমস্যার ব্যাপারে সচেতন থাকেন।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I think that&#x27;s why he&#x27;s been so successful in his work.</span>
+                  <button class="speak-btn" onclick="speakText('I think that\'s why he\'s been so successful in his work.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমার মনে হয় একারণেই তিনি তার কাজে এত সফল হয়েছেন।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation B</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>How do you like your new teacher?</span>
+                  <button class="speak-btn" onclick="speakText('How do you like your new teacher?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">তোমার নতুন শিক্ষক কেমন?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Very well. He&#x27;s always patient with us.</span>
+                  <button class="speak-btn" onclick="speakText('Very well. He\'s always patient with us.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">খুব ভালো। তিনি সবসময় আমাদের সাথে ধৈর্যশীল আচরণ করেন।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Doesn&#x27;t he ever get angry with his students?</span>
+                  <button class="speak-btn" onclick="speakText('Doesn\'t he ever get angry with his students?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">তিনি কি শিক্ষার্থীদের ওপর কখনও রেগে যান না?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>No. He never seems to get upset over anything.</span>
+                  <button class="speak-btn" onclick="speakText('No. He never seems to get upset over anything.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">না। তিনি কোনো কিছু নিয়েই বিরক্ত বা ক্ষুব্ধ হন না।</div>
+              </div>
+            </div>
+        </div>
+      
+        <div class="section-subtitle">অনুশীলনী ও বাক্য রূপান্তর (Practice & Drills)</div>
+        <div class="exercise-box">
+          
+            <div class="drill-item">
+              <div class="drill-en">He is capable of doing this difficult task.</div>
+              <div class="drill-bn">এই কঠিন কাজটি সম্পন্ন করতে সে পুরোপুরি সক্ষম।</div>
+            </div>
+            <div class="drill-item">
+              <div class="drill-en">Always be courteous and polite to everyone.</div>
+              <div class="drill-bn">সবসময় সবার প্রতি বিনয়ী ও ভদ্র আচরণ করুন।</div>
+            </div>
+        </div>
+    </section>
+    <section class="unit-card" id="unit-133">
+      <div class="unit-header">
+        <h2 class="unit-title">133. WORD FORMS (শব্দের রূপান্তর: Noun, Adjective, Adverb)</h2>
+        <span class="unit-badge">Unit 133</span>
+      </div>
+      <div class="section-subtitle">কথোপকথন (Conversations)</div>
+      
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation A</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Didn&#x27;t Alice seem anxious about taking the examination?</span>
+                  <button class="speak-btn" onclick="speakText('Didn\'t Alice seem anxious about taking the examination?')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">পরীক্ষা দেওয়ার ব্যাপারে অ্যালিসকে কি চিন্তিত মনে হয়েছিল?</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Yes. She seemed to have a great deal of anxiety about it.</span>
+                  <button class="speak-btn" onclick="speakText('Yes. She seemed to have a great deal of anxiety about it.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">হ্যাঁ। পরীক্ষা নিয়ে তার মনে বেশ গভীর উদ্বেগ ও দুশ্চিন্তা ছিল।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>But she&#x27;s the most intelligent student in the class!</span>
+                  <button class="speak-btn" onclick="speakText('But she\'s the most intelligent student in the class!')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কিন্তু সে তো ক্লাসের সবচেয়ে বুদ্ধিমান শিক্ষার্থী!</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>I guess intelligence and anxiety aren&#x27;t directly related.</span>
+                  <button class="speak-btn" onclick="speakText('I guess intelligence and anxiety aren\'t directly related.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আমার মনে হয় বুদ্ধিমত্তা এবং পরীক্ষাভীতি সরাসরি সম্পর্কিত নয়।</div>
+              </div>
+            </div>
+        </div>
+        <div class="dialogue-box">
+          <div class="dialogue-box-title">Conversation D</div>
+          
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>We&#x27;re very grateful for all your generosity.</span>
+                  <button class="speak-btn" onclick="speakText('We\'re very grateful for all your generosity.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আপনার সকল উদারতার জন্য আমরা অত্যন্ত কৃতজ্ঞ।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>You&#x27;re very kind to express your gratitude.</span>
+                  <button class="speak-btn" onclick="speakText('You\'re very kind to express your gratitude.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">কৃতজ্ঞতা প্রকাশ করার জন্য আপনারা খুবই সহৃদয়।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s1">S1</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>Well, you were very generous, and we wanted to thank you.</span>
+                  <button class="speak-btn" onclick="speakText('Well, you were very generous, and we wanted to thank you.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আপনি খুবই উদার ছিলেন, তাই আপনাকে ধন্যবাদ জানাতে চেয়েছিলাম।</div>
+              </div>
+            </div>
+            <div class="convo-row">
+              <span class="speaker-tag speaker-s2">S2</span>
+              <div class="sentence-pair">
+                <div class="en-text">
+                  <span>And I have appreciated your kindness.</span>
+                  <button class="speak-btn" onclick="speakText('And I have appreciated your kindness.')" title="Audio">🔊</button>
+                </div>
+                <div class="bn-text">আর আমিও আপনাদের আন্তরিকতার প্রশংসা করেছি।</div>
+              </div>
+            </div>
+        </div>
+      
+        <div class="section-subtitle">অনুশীলনী ও বাক্য রূপান্তর (Practice & Drills)</div>
+        <div class="exercise-box">
+          
+            <div class="drill-item">
+              <div class="drill-en">He is an intelligent person. / His intelligence helps him a lot.</div>
+              <div class="drill-bn">তিনি একজন বুদ্ধিমান মানুষ। / তার বুদ্ধিমত্তা তাকে খুব সাহায্য করে।</div>
+            </div>
+            <div class="drill-item">
+              <div class="drill-en">She spoke politely and treated everyone with respect.</div>
+              <div class="drill-bn">সে অত্যন্ত ভদ্রভাবে কথা বলেছিল এবং সবার সাথে সম্মান প্রদর্শন করেছিল।</div>
+            </div>
+        </div>
+    </section>
+    </main>
+  </div>
+
+  <footer>
+    <p>English Conversation Practice • সম্পূর্ণ সিলেবাস সমাপ্ত (Units 101 - 134) • GitHub Pages Ready 🚀</p>
+  </footer>
+
+  <script>
+    function speakText(text) {
+      if ('speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(text);
+        utterance.lang = 'en-US';
+        utterance.rate = 0.9;
+        window.speechSynthesis.speak(utterance);
+      } else {
+        alert('আপনার ব্রাউজারে স্পিচ সিন্থেসিস সাপোর্ট করে না।');
+      }
+    }
+
+    function toggleTheme() {
+      const current = document.documentElement.getAttribute('data-theme');
+      const target = current === 'dark' ? 'light' : 'dark';
+      document.documentElement.setAttribute('data-theme', target);
+      document.getElementById('themeBtn').innerText = target === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+      localStorage.setItem('theme', target);
+    }
+
+    let bnVisible = true;
+    function toggleAllBengali() {
+      bnVisible = !bnVisible;
+      const bns = document.querySelectorAll('.bn-text, .drill-bn');
+      bns.forEach(el => {
+        el.style.display = bnVisible ? 'block' : 'none';
+      });
+      document.getElementById('toggleBnBtn').innerText = bnVisible ? '👁️ বাংলা হাইড করুন' : '👁️ বাংলা শো করুন';
+    }
+
+    function filterContent() {
+      const query = document.getElementById('searchInput').value.toLowerCase();
+      const units = document.querySelectorAll('.unit-card');
+      units.forEach(unit => {
+        const text = unit.innerText.toLowerCase();
+        if (text.includes(query)) {
+          unit.style.display = 'block';
+        } else {
+          unit.style.display = 'none';
+        }
+      });
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+        document.getElementById('themeBtn').innerText = savedTheme === 'dark' ? '☀️ Light Mode' : '🌙 Dark Mode';
+      }
+
+      const units = document.querySelectorAll('.unit-card');
+      const navList = document.getElementById('navList');
+      units.forEach((unit) => {
+        const titleEl = unit.querySelector('.unit-title');
+        if (titleEl) {
+          const li = document.createElement('li');
+          const a = document.createElement('a');
+          a.href = '#' + unit.id;
+          a.className = 'nav-link';
+          a.innerText = titleEl.innerText;
+          li.appendChild(a);
+          navList.appendChild(li);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
